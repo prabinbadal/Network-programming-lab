@@ -7,7 +7,7 @@ import java.util.Map;
 public class HeaderFieldsRetriever {
 
     public static void main(String[] args) throws Exception {
-        URL url = new URL("https://www.example.com");
+        URL url = new URL("https://www.facebook.com");
         URLConnection connection = url.openConnection();
         Map<String, List<String>> headerFields = connection.getHeaderFields();
         for (Map.Entry<String, List<String>> entry : headerFields.entrySet()) {
